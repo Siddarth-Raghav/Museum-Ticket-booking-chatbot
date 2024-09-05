@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>प्राचीनप्रवेशक</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header Section-->
+    <header>
+        <!--<a href="#"><img src="C:\Users\uc-18\Desktop\Img\logo.png" class="logo" alt="" ></a>-->
+        
+    <nav>
+        <div class="container">
+            <ul class="nav">
+                    <li><a class="nav-btn" href="#">Home</a></li>
+                    <li><a class="nav-btn" href="#museums" >Discover Museums</a></li>
+                    <li><a class="nav-btn" href="#about">About Us</a></li>
+                    <li><a href="#contact.html" id="contactLink" >Contact Us</a></li>
+                    <li><a href="signup.html" id="signupLink">SIGNUP</a></li>
+            </ul> 
+        </div>
+    </nav>
+       
+    </header>
+
+    <!-- Hero Section -->
+     <!--Hero Banner Section-->
+     <section id="home">
+        <div class="hero">
+            <video autoplay muted loop>
+                <source src="bgvd2.mp4" type="video/mp4">
+            </video>
+            <div class="banner container-fluid">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-5 col-md-12">
+                        <div class="content">
+                        <h1>Welcome to प्राचीनप्रवेशक! </h1>
+                        <h2>Explore the history of India</h2>
+                        <p>Discover the rich cultural heritage of India at the National Museum in New Delhi. 
+                        Established in 1949, this prestigious institution houses over 200,000 
+                        artifacts spanning 5,000 years of Indian history. 
+                        From ancient sculptures and rare manuscripts to exquisite paintings and 
+                        archaeological treasures, the museum offers a captivating journey through 
+                        the subcontinent's diverse artistic and cultural traditions.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="btn-container">
+            <button onclick="location.href='#museums'">Start Exploring</button>
+        </div>
+    </section>
+
+    <!-- Museum Listings -->
+    <section id="museums">
+        <div class="container">
+            <h2>Discover Museums</h2>
+            <div class="museum-listing">
+                <div class="museum-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREXG0vw7jRbeEfiuli1k-OmpbKzF5XBTCvNg&s" alt="Museum 1">
+                    <h3> National Museum of India</h3>
+                    <p>Location:New Delhi</p>
+                    <p>Explore history and cultural artifacts.</p>
+                </div>
+                <div class="museum-card">
+                    <img src="https://afar.brightspotcdn.com/dims4/default/b84ea12/2147483647/strip/false/crop/1600x800+0+0/resize/1486x743!/quality/90/?url=https%3A%2F%2Fk3-prod-afar-media.s3.us-west-2.amazonaws.com%2Fbrightspot%2F96%2F97%2F9bd0c39e1252c9fe8334cd8e28eb%2Foriginal-6cb07e8ecb947187f0bffa00b167c7ae.jpg" alt="Museum 2">
+                    <h3>Chhatrapati Shivaji Maharaj Vastu Sangrahalaya</h3>
+                    <p>Location: Mumbai, Maharashtra</p>
+                    <p>Discover art, archaeology, and history.</p>
+                </div>
+                <div class="museum-card">
+                    <img src="museum3.jpg">
+                    <h3>Indian Museum</h3>
+                    <p>Location: Kolkata, West Bengal</p>
+                    <p>Explore the archaeologyo of India</p>
+                </div>
+                <div class="museum-card"></divclass>>
+                    <img src="museum4.jpg">
+                    <h3>National Rail Museum</h3>
+                    <p>Location: New Delhi</p>
+                    <p>Enjoy Train Ride on Steam Locomotive</p>
+                </div>
+                <div class="museum-card">
+                    <img src="museum5.jpg">
+                    <h3>Government Museum</h3>
+                    <p>Location: Chennai, Tamil Nadu</p>
+                    <p>Explore the history of Tamil Nadu</p>
+                </div>
+                <!-- Add more museum cards as needed -->
+            </div>
+        </div>
+    </section>
+
+  
+<!-- Chatbot Section -->
+<div class="chatbot-container">
+    <div class="chatbot-icon" onclick="loadChatbot()">
+    </div>
+</div>
+    
+    <!-- About Us -->
+    <section id="about" style="display: none;">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Our mission is to make museum visits easier and more accessible for everyone. Learn more about our team and our vision.</p>
+            <p>We are dedicated to enhancing your cultural experiences with our advanced, user-friendly ticket booking platform.</p>
+        </div>
+    </section>
+
+    <!-- Contact Us 
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us using the form below. We are here to help!</p>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>-->
+
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Explore Museums. All rights reserved.</p>
+        <ul>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-square-instagram"></i></li>
+        </ul>
+    </div>
+</footer>
+<script src="scripts.js"></script>
+<script>
+   console.log('Script started');
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM fully loaded');
+    
+    var aboutUsBtn = document.getElementById('about-us-btn');
+    var aboutSection = document.getElementById('about');
+
+    console.log('About Us button:', aboutUsBtn);
+    console.log('About section:', aboutSection);
+
+    if (aboutUsBtn && aboutSection) {
+        console.log('Adding click event listener');
+        aboutUsBtn.addEventListener('click', function(e) {
+            console.log('Button clicked');
+            e.preventDefault();
+            if (aboutSection.style.display === 'none' || aboutSection.style.display === '') {
+                console.log('Showing About section');
+                aboutSection.style.display = 'block';
+            } else {
+                console.log('Hiding About section');
+                aboutSection.style.display = 'none';
+            }
+        });
+    } else {
+        console.log('Button or section not found');
+    }
+});
+
+    </script>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        const signupLink = document.getElementById('signupLink');
+        
+        signupLink.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent the default link behavior
+            
+            // Redirect to the signup page
+            window.location.href = 'signup.html';
+            
+            // Alternatively, if you want to load the content dynamically:
+            // loadSignupContent();
+        });
+    });
+    </script>
+
+</script>
+<script>document.addEventListener('DOMContentLoaded', function() {
+    const contactLink = document.getElementById('contactLink');
+    
+    contactLink.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent the default link behavior
+        
+        // Redirect to the signup page
+        window.location.href = 'contact.html';
+        
+        // Alternatively, if you want to load the content dynamically:
+        // loadSignupContent();
+    });
+});
+</script>
+    
+    // If you want to load the signup content dynamically:
+    // function loadSignupContent() 
+    //     
+</body>
+</html>
